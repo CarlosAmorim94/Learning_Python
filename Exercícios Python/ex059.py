@@ -1,26 +1,39 @@
 n1 = int(input('Digite o primeiro número: '))
 n2 = int(input('Digite o segundo número: '))
+option = 0
 
-print('''
-Escolha a opção:
-[ 1 ] = Somar
-[ 2 ] = Multiplicar
-[ 3 ] = Maior
-[ 4 ] = Novos números
-[ 5 ] = Sair
-''')
-v = int(input('Digite a opção desejada: '))
+while option != 5:
 
-while v in(3,1):
-    if v == 1:
+    print('''
+    Escolha a opção:
+    [ 1 ] = Somar
+    [ 2 ] = Multiplicar
+    [ 3 ] = Qual é o maior
+    [ 4 ] = Novos números
+    [ 5 ] = Sair
+    ''')
+    print('-=' *20)
+    option = int(input('Digite a opção desejada: '))
+   
+   
+    if option == 1: #Somando
         r = n1 + n2
         print('A soma entre {} e {} é igual a {:.0f}'.format( n1, n2, r ))
-    elif v == 2:
+    elif option == 2: #Mutiplicando
         r = n1 * n2
         print('A multiplicação entre {} e {} é igual a {:.0f}'.format(n1, n2, r))
-    elif v == 3:
+    elif option == 3: #Qual é o maior
         if n1 > n2:
             print('O maior número digitado foi {}'.format(n1))
         else:
             print('O maior número digitado foi {}'.format(n2))
-if v ==
+    elif option == 4: #Novos numeros
+        print('Digite os números novamente...')
+        n1 = int(input('Digite o primeiro número: '))
+        n2 = int(input('Digite o segundo número: '))
+    elif option == 5:
+        print('Obrigado por utilizar o software, volte sempre!')
+    else:
+        print('Opção inválida, tente de novo')
+
+print('-=' *20)
