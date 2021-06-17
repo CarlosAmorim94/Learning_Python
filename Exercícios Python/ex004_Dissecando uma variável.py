@@ -1,3 +1,9 @@
+"""
+EXERCÍCIO 004: Dissecando uma Variável
+Faça um programa que leia algo pelo teclado e mostre na tela o seu tipo primitivo
+e todas as informações possíveis sobre ele.
+"""
+
 txt = input('Digite algo:')
 
 print('O tipo primitivo de {} é {}'.format(txt, type(txt)))

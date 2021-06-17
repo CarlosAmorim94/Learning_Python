@@ -1,3 +1,14 @@
+"""
+EXERCÍCIO 059: Criando um Menu de Opções
+Crie um programa que leia dois valores e mostre um menu como o abaixo na tela:
+[ 1 ] Somar
+[ 2 ] Multiplicar
+[ 3 ] Maior
+[ 4 ] Novos Números
+[ 5 ] Sair do Programa
+Seu programa deverá realizar a operação solicitada em cada caso.
+"""
+
 n1 = int(input('Digite o primeiro número: '))
 n2 = int(input('Digite o segundo número: '))
 option = 0

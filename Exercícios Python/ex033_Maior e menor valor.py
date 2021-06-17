@@ -1,3 +1,8 @@
+"""
+EXERCÍCIO 033: Maior e Menor Valores
+Faça um programa que leia três números e mostre qual é o maior e qual é o menor.
+"""
+
 a = float(input('Digite o primeiro número: '))
 b = float(input('Digite o segundo número: '))
 c = float(input('digite o terceiro número: '))
@@ -18,4 +23,3 @@ if b > a and c > a:
 if c > a and c > b:
     maior = c
 print('O maior número digitado foi {}'.format(maior))
-

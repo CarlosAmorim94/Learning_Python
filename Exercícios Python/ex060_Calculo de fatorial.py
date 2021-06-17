@@ -1,4 +1,10 @@
-#-----MODO FÁCIL---
+"""
+EXERCÍCIO 060: Cálculo do Fatorial
+Faça um programa que leia um número qualquer e mostre seu fatorial.
+Ex: 5! = 5 x 4 x 3 x 2 x 1 = 120
+"""
+
+#-----INICIO DO MODO FÁCIL---
 #from math import factorial
 #n = int(input('digite um número para calcular o seu fatorial: '))
 #f = factorial(n)

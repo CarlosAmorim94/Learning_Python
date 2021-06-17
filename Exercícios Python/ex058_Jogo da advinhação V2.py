@@ -1,25 +1,32 @@
+"""
+EXERCÍCIO 058: Jogo da Adivinhação v2.0
+Melhore o jogo do EXERCÍCIO 028 onde o computador vai "pensar" em um número entre 0 e 10.
+Só que agora o jogador vai tentar adivinhar até acertar, mostrando no final quantos
+palpites foram necessários para vencer.
+"""
+
 from random import randint
 
 print('\33[1;33m-=-\33[m' *20)
 print('\33[1;33mVamos jogar? eu pensei em um número, tente advinhar qual é!\33[m')
 print('\33[1;33m-=-\33[m' *20)
 
-player = int(input('Digite seu palpite de 0 a 10: '))
-pc = randint(0 , 10)
-tentativas = 0
-
-while player != pc :
-    player = int(input('\33[1;31mErrou!\33[m Digite seu palpite de 0 a 10: '))
-    tentativas += 1
-    if player > pc :
-        print('O meu número é menor que esse!')
-    elif player < pc :
-        print('O meu número é maior que esse!')
+computador = randint(0, 10)
+print('Sou seu computador... Acabei de pensar em um número entre 0 e 10.')
+print('Será que você consegue adivinhar qual foi?')
+acertou = False
+palpites = 0
+while not acertou:
+    jogador = int(input('Qual é seu palpite? '))
+    palpites += 1
+    if jogador == computador:
+        acertou = True
     else:
-        print('''
-        \33[1;32mVOCÊ ACERTOU!\33[m
-        Eu pensei em {}, você chutou {} 
-        Tentou {} vezes'''.format( pc , player , (tentativas+1)))
+        if jogador < computador:
+            print('Mais... Tente mais uma vez.')
+        elif jogador > computador:
+            print('Menos... Tente mais uma vez.')
+print('Acertou com {} tentativas. Parabéns!'.format(palpites))
 
 print('\33[33m-=-\33[m' *10)
 print('\33[33m             FIM\33[m')
