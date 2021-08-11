@@ -32,7 +32,15 @@ print(tabela["Churn"].value_counts(normalize=True).map("{:.1%}".format)) #Format
 
 #Passo 5: Olhando a bade de dados, vamos tentar identificar o motivo do cancelamento
 
-coluna = "FormaPagamento"
-grafico = px.histogram(tabela, x=coluna, color="Churn")
-grafico.show()
+for coluna in tabela.columns:
+    print(coluna)
+    grafico = px.histogram(tabela, x=coluna, color="Churn")
+    grafico.show()
 
+#Passo 6: Conclusão
+
+#Clientes com familias maiores (casados e com dependentes) cancelam menos.
+#Clentes recentes cancelam MUITO, cancelam mais vezes.
+#Clientes de fibra cancelam mais vezes.
+#Clientes com maiores tipos serviços tem menor chance de cancelar.
+#Maioria dos cancelamentos, estão no contrato mensal.
