@@ -5,6 +5,7 @@
 #Resolução:
 #Passo 1: Importar base de dados
 import pandas as pd
+import plotly.express as px
 
 tabela = pd.read_csv('telecom_users.csv')
 
@@ -26,8 +27,12 @@ print(tabela.info())
 
 #Passo 4: Análise exploratória (Análise geral)
 
-
+print(tabela["Churn"].value_counts())                   #Contagem de "Churns" (desistencias)
+print(tabela["Churn"].value_counts(normalize=True).map("{:.1%}".format)) #Formatando em percentual
 
 #Passo 5: Olhando a bade de dados, vamos tentar identificar o motivo do cancelamento
 
+coluna = "FormaPagamento"
+grafico = px.histogram(tabela, x=coluna, color="Churn")
+grafico.show()
 
