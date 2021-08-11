@@ -1,8 +1,7 @@
-# Olá, Mundo!
- 
-Primeiros passos em Python.
+# Análise de dados com Pandas!
 
-Repositório criado para acompanhamento dos meus primeiros passos como iniciante em programação.
-Os exercicíos desse repositório são dos desafios "Curso em vídeo" do Prof. Gustavo Guanabara.
+Análise de dados com Python utilizando o Pandas! Aprendendo a manipular gigantescas quantidades de dados e fazer análises eficientes!
+Muuuuito mais rápido e objetivo que o Excel :-)
 
-![image](https://user-images.githubusercontent.com/83739628/128277950-6783efd8-08a6-4624-95a1-1f4bd9ea2d0c.png)
+
+ ![1628644817102](https://user-images.githubusercontent.com/83739628/128958362-cc092ce8-eed9-466a-aff1-8fa92bff91a4.jpg)
