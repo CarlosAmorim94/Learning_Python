@@ -1,8 +1,5 @@
-# Olá, Mundo!
- 
-Primeiros passos em Python.
+# Data Science and Artificial Intelligence!
 
-Repositório criado para acompanhamento dos meus primeiros passos como iniciante em programação.
-Os exercicíos desse repositório são dos desafios "Curso em vídeo" do Prof. Gustavo Guanabara.
 
-![image](https://user-images.githubusercontent.com/83739628/128277950-6783efd8-08a6-4624-95a1-1f4bd9ea2d0c.png)
+![graficos](https://user-images.githubusercontent.com/83739628/129288679-b1c16e3a-d079-4ef4-9b1c-f1bd894ef185.png)
+
