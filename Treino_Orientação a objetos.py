@@ -29,3 +29,5 @@ print(f'O ano atual é {danielle.ano_atual}') #Atributo da classe
 
 Pessoa.ano_atual = 2022
 print(f'O ano atual é {danielle.ano_atual}') #Alterando um atributo da classe
+
+#testando 
