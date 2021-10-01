@@ -4,7 +4,7 @@ class Pessoa:
 
     ano_atual = 2021
 
-    def __init__(self, nome, idade):
+    def __init__(self, nome, idade, sexo=False):    #Parâmetros como False
         self.nome = nome
         self.idade = idade
         #self._sexo = sexo          #Parâmetro protegido por causa do _ (Se estivesse no código, seria indetectável e imutável)
@@ -29,5 +29,3 @@ print(f'O ano atual é {danielle.ano_atual}') #Atributo da classe
 
 Pessoa.ano_atual = 2022
 print(f'O ano atual é {danielle.ano_atual}') #Alterando um atributo da classe
-
-#testando 
